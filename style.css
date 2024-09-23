@@ -32,8 +32,24 @@ section {
   max-width: 150px;
   margin-right: 20px;
 }
-button {
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label,
+form input,
+form select,
+form button {
   margin: 10px;
+}
+
+form input,
+form select,
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 @media (max-width: 768px) {
