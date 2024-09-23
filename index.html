@@ -31,6 +31,26 @@
         <img src="images/pexels-mikebirdy-112460.jpg" alt="Car Image" />
       </div>
     --></section>
+    <section id="services">
+      <h2>Book a Service</h2>
+
+      <form id="apportment-form">
+        <label for="service-type">Service Type</label>
+
+        <select id="service-type" required>
+          <option value="repair">Repair</option>
+          <option value="Maintenanace">Maintenanace</option>
+        </select>
+
+        <label for="car-model">Car Model:</label>
+        <input type="text" id="car-model" required />
+
+        <label for="appointment-time">Time:</label>
+        <input type="time" id="oppintment-time" required />
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
 
     <script src="app.js"></script>
   </body>
