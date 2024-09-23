@@ -32,3 +32,18 @@ section {
   max-width: 150px;
   margin-right: 20px;
 }
+button {
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .car-listing {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 767px) {
+  .car-listing {
+    flex-direction: column;
+  }
+}
