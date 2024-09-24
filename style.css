@@ -25,12 +25,22 @@ section {
 }
 .car-listing {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 .car-listing img {
   max-width: 150px;
   margin-right: 20px;
+}
+
+button {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
 }
 
 form {
@@ -50,6 +60,13 @@ form button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #333;
+  color: white;
 }
 
 @media (max-width: 768px) {

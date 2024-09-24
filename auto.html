@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Automobile Dealership & Service App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Auto Dealership & Service</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#listings">Car Listings</a>
+        <a href="#listings">Book Services</a>
+        <a href="#listings"> Renew Documents</a>
+      </nav>
+    </header>
+    <section id="listings">
+      <h2 id="">Car Listings</h2>
+      <div class="car-listing">
+        <div>
+          <img src="images/pexels-mikebirdy-116675.jpg" alt="Car Image" />
+          <h3>Car Brand - Model</h3>
+          <p>Price: $30,000</p>
+          <button>View Details</button>
+        </div>
+
+        <div>
+          <img src="images/pexels-jmark-253096.jpg" alt="Car Image" />
+          <h3>Car Brand - Model</h3>
+          <p>Price: $30,000</p>
+          <button>View Details</button>
+        </div>
+
+        <div>
+          <img src="images/pexels-jmark-253096.jpg" alt="Car Image" />
+          <h3>Car Brand - Model</h3>
+          <p>Price: $30,000</p>
+          <button>View Details</button>
+        </div>
+
+        <div>
+          <img src="images/pexels-jmark-253096.jpg" alt="Car Image" />
+          <h3>Car Brand - Model</h3>
+          <p>Price: $30,000</p>
+          <button>View Details</button>
+        </div>
+
+        <div>
+          <img src="images/pexels-jmark-253096.jpg" alt="Car Image" />
+          <h3>Car Brand - Model</h3>
+          <p>Price: $30,000</p>
+          <button>View Details</button>
+        </div>
+      </div>
+
+      <!---<div>
+        <img src="images/pexels-jmark-253096.jpg" alt="Car Image" />
+        <img src="images/pexels-mikebirdy-112460.jpg" alt="Car Image" />
+        <img src="images/pexels-mikebirdy-170811.jpg" alt="Car Image" />
+        <img src="images/pexels-mikebirdy-244206.jpg" alt="Car Image" />
+        <img src="images/pexels-mikebirdy-112460.jpg" alt="Car Image" />
+      </div>
+    --></section>
+    <section id="services">
+      <h2>Book a Service</h2>
+
+      <form id="appointment-form">
+        <label for="service-type">Service Type</label>
+
+        <select id="service-type" required>
+          <option value="repair">Repair</option>
+          <option value="Maintenanace">Maintenanace</option>
+        </select>
+
+        <label for="car-model">Car Model:</label>
+        <input type="text" id="car-model" required />
+
+        <label for="appointment-time">Time:</label>
+        <input type="time" id="oppintment-time" required />
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+    <section id="renew">
+      <h2>Renew Documents</h2>
+      <form id="renewal-form">
+        <label for="car-reg">Car Registration Number:</label>
+        <input type="text" id="car-reg" required />
+
+        <label for="expiry-date"> Expiry Date:</label>
+        <input type="date" id="expiry-date" required />
+
+        <label for="upload-docs">Upload Documents:</label>
+        <input type="file" id="upload-docs" required />
+
+        <label for="payment-amount">Payment Amount:</label>
+        <input type="number" id="payment-amount" required />
+
+        <button type="submit">Submit Payment</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2024 Auto Dealership & Service</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
