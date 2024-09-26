@@ -1,11 +1,16 @@
 :root {
   --background: #f4f4f4;
   --color-primary: var();
-  --color-secondary: var();
+  --color-secondary: black;
   --color-accent: rgb(253, 0, 0);
   --color-header: #333;
   --color-headings: #1b0760;
   --color-text: #918ca4;
+}
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
 }
 
 /*TYPOGRAPHY*/
@@ -47,16 +52,29 @@ h3 {
   line-height: 1.1rem;
 }
 .header {
-  background-color: var(--color-header);
+  background-color: var(--color-secondary);
   color: white;
   text-align: center;
   padding: 15px 0;
 }
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
+.nav--text {
+  display: flex;
+  justify-content: center;
+}
+.nav--logo {
+  width: 100px;
+  height: 100px;
+}
 nav a {
   color: white;
   margin: 0 15px;
 }
+
 #listings {
   padding: 20px;
   margin: 20px;
@@ -128,7 +146,7 @@ a {
 
 /*Block*/
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 3rem;
   padding: var(--padding-vertical) 2rem;
 }
 
@@ -158,6 +176,42 @@ a {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/*Button*/
+.btn {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+}
+
+.btn--accent {
+  background-color: var(--color-accent);
+  color: #fff;
+}
+.btn--accent:hover {
+  background-color: #fd4516;
+}
+
+.btn-secondary {
+  background-color: var(--color-header);
+  background-color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #535050;
+}
+
+.btn--block {
+  width: 100%;
+  display: inline-block;
 }
 
 form {
@@ -208,8 +262,17 @@ footer {
     font-size: 2rem;
     margin-top: 3rem;
   }
-}
 
+  .image--content {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-weight: 400;
+  }
+}
 @media (max-width: 767px) {
   .car-listing {
     flex-direction: column;
