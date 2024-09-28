@@ -333,12 +333,20 @@ footer {
   .collapsible__content {
     display: none;
   }
+
+  .collapsible--expanded .collapsible__content {
+    display: block;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 390px) {
   .car-listing {
     flex-direction: column;
   }
   .car-listings {
     margin-top: 20px;
+  }
+
+  .block__heading {
+    font-size: 4rem;
   }
 }

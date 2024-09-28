@@ -1,3 +1,9 @@
+const collapsible = document
+  .querySelector(".collapsible")
+  .addEventListener("click", function () {
+    this.classList.toggle("collapsible--expanded");
+  });
+
 document
   .getElementById("appointment-form")
   .addEventListener("submit", function (e) {
