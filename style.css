@@ -6,6 +6,8 @@
   --color-header: #333;
   --color-headings: #1b0760;
   --color-text: #918ca4;
+  --color-border: #ccc;
+  --border-radius: 30px;
 }
 *,
 *::after,
@@ -223,17 +225,18 @@ a:hover {
 }
 
 /*Button*/
-.btn {
-  font-size: 1.8rem;
+.btns {
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 2rem 3rem;
-  border: 0;
+  padding: 2rem 4vw;
+  outline: 0;
   border-radius: 40px;
   text-align: center;
   cursor: pointer;
   white-space: nowrap;
   margin: 1rem 0;
+  border: none;
 }
 
 .btn--accent {
@@ -258,7 +261,39 @@ a:hover {
   display: inline-block;
 }
 
-form {
+.text-p {
+  color: var(--color-headings);
+  font-size: 1.5rem;
+}
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 1.5rem;
+}
+::placeholder {
+  color: #cdcbd7;
+}
+
+.input-groups {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  display: flex;
+}
+
+.input-groups .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+  width: 0;
+}
+.input-groups .btns {
+  margin: 4px;
+}
+.form {
   display: flex;
   flex-direction: column;
 }
@@ -271,7 +306,7 @@ form button {
 
 form input,
 form select,
-form button {
+form .button {
   padding: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -336,6 +371,10 @@ footer {
 
   .collapsible--expanded .collapsible__content {
     display: block;
+  }
+
+  .input {
+    font-size: 2rem;
   }
 }
 @media (max-width: 390px) {
