@@ -15,18 +15,31 @@
   </head>
   <body>
     <section class="block block--dark block--skewed-left hero">
-      <nav class="navigation">
-        <img
-          class="nav--logo"
-          src="
+      <nav class="navigation collapsible collapsible--expanded">
+        <a href="auto.html">
+          <img
+            class="nav--logo"
+            src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/original/247Drive_Logo_-_Transparent.png?1727309673"
-          alt="logo"
-        />
-        <div class="nav--text">
-          <a href="auto.html">Car Listings</a>
-          <a href="auto.html">Book Services</a>
-          <a href="auto.html"> Renew Documents</a>
-        </div>
+            alt="logo"
+          />
+        </a>
+
+        <svg class="icon icon--color nav__toggler">
+          <use xlink:href="icons/sprite (1).svg#menu"></use>
+        </svg>
+
+        <ul class="list nav__list collapsible__content">
+          <li class="list--items">
+            <a href="auto.html">Car Listings</a>
+          </li>
+          <li class="list--items">
+            <a href="auto.html">Book Services</a>
+          </li>
+          <li class="list--items">
+            <a href="auto.html"> Renew Documents</a>
+          </li>
+        </ul>
       </nav>
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
@@ -34,7 +47,9 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/origina
 
           <p class="hero__tagline">Everything Automobile</p>
 
-          <a href="" class="btn btn--accent btn--stretched">View More</a>
+          <a href="auto.html" class="btn btn--accent btn--stretched"
+            >View More</a
+          >
         </header>
         <div class="image--content">
           <img
