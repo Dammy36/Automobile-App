@@ -16,6 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="normalize.css" />
   </head>
@@ -53,7 +54,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/origina
 
           <p class="hero__tagline">Everything Automobile</p>
 
-          <a href="auto.html" class="btns btn--accent btn--stretched"
+          <a href="auto.html" class="btn btn--accent btn--stretched"
             >View More</a
           >
         </header>
@@ -66,69 +67,53 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/origina
         </div>
       </div>
     </section>
-    <section class="text-center mt-5">
+    <section class="text-center mt-5 block--domain">
       <h2 class="display-3 fw-bold">Easy Way To Find The Right Car</h2>
       <p class="text-p">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eveniet
       </p>
+
       <div class="input-groups">
         <input
           type="text "
           class="input"
           placeholder="Enter car model here..."
         />
-        <button class="btns btn--accent">Search</button>
+        <button class="btn btn--accent">Search</button>
       </div>
     </section>
-    <div class="dashboard">
-      <h2>Vehicle Management Dashboard</h2>
+    <section style="width: 40%; padding: 2rem">
+      <div class="plan">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Mechanic Offered</h3>
+            <span class="plan__price">Price: $14</span>
+            <span class="plan__billing-cycle">/Month</span>
+            <span class="badge badge--primary badge--small">10% OFFF</span>
+            <span class="plan__description">East Start on</span>
+          </header>
+          <div class="card__body">
+            <ul class="service-list">
+              <li class="service-item list--tick">Oil Change</li>
+              <li class="service-item list--tick">
+                Keep your engine running smoothly with regular oil changes.
+              </li>
+              <li class="service-item list--tick">Brake Repair</li>
+              <li class="service-item list--tick">
+                Ensure your safety with high-quality brake repair Services
+              </li>
+              <li class="service-item list--tick">Engine Diagnostics</li>
 
-      <div class="card" style="width: 18rem">
-        <img
-          src="images/pexels-jmark-253096.jpg"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <h5 class="card-title">Total Vehicles Under Management</h5>
-          <p class="card-text">Total: 50</p>
-          <a href="#" class="btn btn-primary">View More</a>
+              <li class="service-item list--tick">Battery Replacement</li>
+              <li class="service-item list--tick">
+                Quick and easy battery testing and replacement
+              </li>
+            </ul>
+            <button class="btn-card">View More</button>
+          </div>
         </div>
       </div>
-
-      <div class="summary-cards">
-        <div class="card-1">
-          <h3>Upcoming Vehicle Document Renewals</h3>
-          <p>3 vehicles due for renewal in the next 30 days</p>
-        </div>
-        <div class="card-1">
-          <h3>Pending Mechanic Requests</h3>
-          <p>5 requests pending</p>
-        </div>
-
-        <div class="card-1">
-          <h3>Vehicle Sales Insights</h3>
-          <p>Total sales: $100,000</p>
-        </div>
-      </div>
-      <div class="recent-activity">
-        <h2>Latest Renewals</h2>
-        <ul>
-          <li>Renewal 1: Vehicle 1</li>
-          <li>Renewal 2: Vehicle 2</li>
-        </ul>
-        <h2>Latest Service Requests</h2>
-        <ul>
-          <li>Service Request 1: Vehicle 3</li>
-          <li>Service Request 2: Vehicle 4</li>
-        </ul>
-        <h2>Latest Sales</h2>
-        <ul>
-          <li>Sale 1: Vehicle 5</li>
-          <li>Sale 2: Vehicle 6</li>
-        </ul>
-      </div>
-    </div>
+    </section>
 
     <script src="app.js"></script>
   </body>

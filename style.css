@@ -1,6 +1,6 @@
 :root {
   --background: #f4f4f4;
-  --color-primary: var();
+  --color-primary: rgb(32, 32, 243);
   --color-secondary: black;
   --color-accent: rgb(253, 0, 0);
   --color-header: #333;
@@ -225,7 +225,7 @@ a:hover {
 }
 
 /*Button*/
-.btns {
+.btn {
   font-size: 1.5rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -261,6 +261,23 @@ a:hover {
   display: inline-block;
 }
 
+.btn-card {
+  border: 2px solid var(--color-headings);
+  padding: 1.5rem 3rem;
+  border-radius: 40px;
+  margin-top: 20px;
+  background: #fff;
+  cursor: pointer;
+  width: 50%;
+  display: inline-block;
+  color: var(--color-headings);
+}
+
+.btn-card:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
 .text-p {
   color: var(--color-headings);
   font-size: 1.5rem;
@@ -287,11 +304,87 @@ a:hover {
 .input-groups .input {
   border: 0;
   flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   width: 0;
 }
-.input-groups .btns {
+
+.input-groups .btn {
   margin: 4px;
+}
+
+.block--domain .input-groups {
+  box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+/*Card*/
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: white;
+}
+
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: white;
+}
+.card--secondary .badge--secondary {
+  background: var(--color-accent);
+}
+
+.card--secondary .badge--primary {
+  background: #e8e7eb;
+}
+
+/*Plan*/
+
+.plan__name {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.4rem;
+}
+.plan__price {
+  font-size: 5rem;
+}
+
+.plan__billing-cycle {
+  font-size: 1.6rem;
+  font-weight: 300;
+  opacity: 0.8;
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 1.7rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+}
+
+.plan .service-item {
+  margin-bottom: 2rem;
+  padding-left: none;
+  color: var(--color-headings);
+}
+
+.list--tick {
+  list-style-image: url(images/tick.svg);
+  padding-left: 3rem;
+}
+.list--tick .service-item {
+  padding-left: 0;
+  margin-bottom: 1rem;
 }
 .form {
   display: flex;
@@ -351,6 +444,12 @@ footer {
     padding: 1rem 2rem;
     font-weight: 400;
   }
+
+  .btn-card {
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
   .nav__toggler {
     display: block;
   }
@@ -376,7 +475,22 @@ footer {
   .input {
     font-size: 2rem;
   }
+
+  .plan__name,
+  .plan__price {
+    font-size: 1.8rem;
+  }
+
+  .plan__billing-cycle,
+  .plan__description {
+    font-size: 1.5rem;
+  }
+
+  .list--tick .service-item {
+    padding-left: 0.5rem;
+  }
 }
+
 @media (max-width: 390px) {
   .car-listing {
     flex-direction: column;
