@@ -16,6 +16,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
       src="https://kit.fontawesome.com/3489c941c2.js"
@@ -54,7 +55,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/origina
         </ul>
       </nav>
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
+        <header class="block__header hero__content" data-aos="zoom-out">
           <h1 class="block__heading">247DRIVE AUTO</h1>
 
           <p class="hero__tagline">Everything Automobile</p>
@@ -63,7 +64,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/102/origina
             >View More</a
           >
         </header>
-        <div class="image--content">
+        <div class="image--content" data-aos="zoom-in">
           <img
             src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/103/original/pexels-mikebirdy-116675-removebg-preview.png?1727309689"
@@ -74,7 +75,9 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/103/origina
       </div>
     </section>
     <section class="block__header block--domain">
-      <h2 class="display-3 fw-bold">Easy Way To Find The Right Car</h2>
+      <h2 class="display-3 fw-bold" data-aos="fade">
+        Easy Way To Find The Right Car
+      </h2>
       <p class="text-p">
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro eveniet
       </p>
@@ -264,8 +267,8 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/806/origina
         </p>
       </div>
 
-      <div class="grid grid--1x2 block-content">
-        <div class="grid__contents">
+      <article class="grid grid--1x2 block-content">
+        <div class="grid__contents" data-aos="fade-right">
           <h4 class="h4">Super Easy to Use</h4>
           <p class="grid-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam
@@ -274,7 +277,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/806/origina
           <a href="#" class="link-arrow">View More</a>
         </div>
 
-        <div class="grid-container-image">
+        <div class="grid-container-image" data-aos="zoom-in-left">
           <img
             src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/892/original/car12.jpeg?1727813754"
@@ -282,19 +285,21 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/892/origina
             class="images"
           />
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="container block-content-2">
-      <div class="grid grid--1x2 block-content">
-        <img
-          src="
+      <article class="grid grid--1x2 block-content">
+        <div data-aos="zoom-in-left">
+          <img
+            src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/891/original/car11.jpeg?1727813740"
-          alt=" Seventh car"
-          class="images"
-        />
+            alt=" Seventh car"
+            class="images"
+          />
+        </div>
 
-        <div class="grid__contents">
+        <div class="grid__contents" data-aos="fade-left">
           <h4 class="h4">Super Easy to Use</h4>
           <p class="grid-p">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet magnam
@@ -302,11 +307,11 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/891/origina
           </p>
           <a href="#" class="link-arrow">View More</a>
         </div>
-      </div>
+      </article>
     </section>
 
     <section class="container block-content-2">
-      <div class="grid grid--1x2 block-content">
+      <article class="grid grid--1x2 block-content" data-aos="fade-up">
         <div class="grid__contents">
           <h4 class="h4">Super Easy to Use</h4>
           <p class="grid-p">
@@ -315,15 +320,20 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/891/origina
           </p>
           <a href="#" class="link-arrow">View More</a>
         </div>
-
-        <img
-          src="
+        <div data-aos="zoom-in-left">
+          <img
+            src="
 https://s3.amazonaws.com/shecodesio-production/uploads/files/000/145/890/original/car10.jpeg?1727813724"
-          alt=" Seventh car"
-          class="images"
-        />
-      </div>
+            alt=" Seventh car"
+            class="images"
+          />
+        </div>
+      </article>
     </section>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
