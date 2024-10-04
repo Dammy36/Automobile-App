@@ -106,6 +106,9 @@ li {
   padding: 0.5rem 2rem;
   border-bottom: 0;
 }
+.list--items a:hover {
+  color: #fff;
+}
 .icon {
   width: 40px;
   height: 40px;
@@ -120,17 +123,25 @@ li {
   margin: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgb((0, 0, 0, 0.1));
+  box-shadow: 0 4px 8px rgb((0, 0, 0, 0.2));
 }
+
+#lisings-car {
+  margin-bottom: 2rem;
+}
+
 .car-listing {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 .car-listing img {
   max-width: 150px;
   margin-right: 20px;
+  margin-top: 1rem;
+}
+
+#services,
+#renew {
+  margin: 1.5rem;
 }
 
 /* LINKS */
@@ -316,16 +327,32 @@ a:hover {
   font-size: 1.5rem;
 }
 
+input,
+select {
+  outline: 0;
+}
+
 .input {
   padding: 1.5rem 3.5rem;
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
-  outline: 0;
+
   color: var(--color-headings);
   font-size: 1.5rem;
 }
+
 ::placeholder {
   color: #cdcbd7;
+}
+
+.appointment-button,
+.submit--button {
+  border: none;
+  background: var(--color-accent);
+  padding: 12px 10px;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
 }
 
 .input-groups {
@@ -585,10 +612,9 @@ footer {
 .footer__heading {
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 2rem;
   color: #fff;
-}
-
-.footer__band {
+  padding-left: 3.5rem;
 }
 
 .footer__band img {
@@ -598,24 +624,65 @@ footer {
 
 .footer__copyight {
   font-size: 1.5rem;
-  color: #fff;
   opacity: 0.3;
+  color: #fff;
 }
 
 .footer-container {
   color: #fff;
 }
 
+.ul-list {
+  margin-top: 1.5rem;
+}
+
+.footer-list a,
+.footer-list {
+  color: var(--color-text);
+  transition: transform 0.2s ease-out;
+}
+
+.footer-list a:hover,
+.footer-list:hover {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.footer-list {
+  padding: 1rem;
+}
+
 .footers {
   text-align: center;
   padding: 15px 0;
   background-color: var(--color-header);
-  color: white;
+}
+
+.fa-phone,
+.fa-envelope,
+.fa-question {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.number {
+  padding-left: 1rem;
+}
+.fa-instagram {
+  color: red;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 912px) {
+  .block__heading {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 900px) {
   .car-listing {
-    flex-direction: row;
+    margin: 0 auto;
+    width: 50%;
   }
 
   .block__heading {
@@ -669,8 +736,12 @@ footer {
     flex-direction: column;
   }
 
+  .car-band-heading,
   .link-arrow {
     font-size: 1.5rem;
+  }
+  .link-arrow {
+    margin-bottom: 2rem;
   }
 
   .list--items {
@@ -738,18 +809,65 @@ footer {
   .block-content-2 {
     padding: 1rem;
   }
+
+  footer {
+    margin-top: 3rem;
+  }
+
+  footer .grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .fa-phone,
+  .fa-envelope,
+  .fa-question,
+  .fa-instagram {
+    font-size: 1.2rem;
+  }
+
+  .footer__copyight {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .car-listing {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .car-listing img {
+    max-width: 130px;
+  }
+
+  .block__heading {
+    font-size: 2.6rem;
+    font-weight: 500;
+  }
+
+  .footer__band {
+    display: none;
+  }
+  .footer__heading {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer-list {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 390px) {
   .car-listing {
-    flex-direction: column;
-  }
-  .car-listings {
-    margin-top: 20px;
+    width: 100%;
   }
 
   .block__heading {
-    font-size: 2rem;
+    font-size: 2.4rem;
+  }
+
+  .car-listings {
+    margin-top: 20px;
   }
 
   .plan__name,
@@ -764,5 +882,10 @@ footer {
 
   .list--tick .service-item {
     padding-left: 0.5rem;
+  }
+
+  .footer-list a:hover,
+  .footer-list:hover {
+    font-size: 1.2rem;
   }
 }
