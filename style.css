@@ -695,6 +695,10 @@ footer {
     font-size: 3rem;
   }
 
+  .testimony-h2 {
+    font-size: 2.4rem;
+  }
+
   .grid--1x2 {
     grid-template-columns: 1fr;
   }
@@ -850,17 +854,14 @@ footer {
     max-width: 130px;
   }
 
-  .block__heading {
-    font-size: 2rem;
+  .testimony-h2 {
+    font-size: 1.8rem;
     font-weight: 500;
   }
   .block__header-p {
     margin-bottom: 1rem;
   }
 
-  .testimony-h2 {
-    font-size: 2rem;
-  }
   .footer__heading {
     font-size: 1.5rem;
     text-align: center;
@@ -871,9 +872,6 @@ footer {
 }
 
 @media (max-width: 320px) {
-  .block__heading {
-    font-size: 1.8rem;
-  }
   .h2-display {
     font-size: 2rem;
   }
