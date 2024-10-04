@@ -16,6 +16,11 @@
 }
 
 /*TYPOGRAPHY*/
+
+body,
+html {
+  overflow-x: hidden;
+}
 html {
   font-size: 62.5%;
 }
@@ -123,7 +128,7 @@ li {
   margin: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgb((0, 0, 0, 0.2));
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2);
 }
 
 #lisings-car {
@@ -192,7 +197,7 @@ a:hover {
 }
 
 .hero-image {
-  width: 100%;
+  max-width: 100%;
 }
 
 .img-container {
@@ -215,6 +220,7 @@ a:hover {
 /*Grid*/
 .grid {
   display: grid;
+  gap: 20px;
 }
 .grid--1x2 {
   grid-template-columns: repeat(2, 1fr);
@@ -675,18 +681,17 @@ footer {
 
 @media (max-width: 912px) {
   .block__heading {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
   .car-listing {
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
   }
-
   .block__heading {
-    font-size: 4.5rem;
+    font-size: 2rem;
   }
 
   .grid--1x2 {
@@ -810,6 +815,15 @@ footer {
     padding: 1rem;
   }
 
+  #services,
+  #renew {
+    margin: 2rem;
+  }
+
+  .footer__band {
+    display: none;
+  }
+
   footer {
     margin-top: 3rem;
   }
@@ -830,24 +844,19 @@ footer {
   }
 }
 
-@media (max-width: 450px) {
-  .car-listing {
-    margin: 0 auto;
-    width: 100%;
-  }
-
+@media (max-width: 375px) {
   .car-listing img {
     max-width: 130px;
   }
 
   .block__heading {
-    font-size: 2.6rem;
+    font-size: 2rem;
     font-weight: 500;
   }
-
-  .footer__band {
-    display: none;
+  .block__header-p {
+    margin-bottom: 1rem;
   }
+
   .footer__heading {
     font-size: 1.5rem;
     text-align: center;
@@ -857,13 +866,12 @@ footer {
   }
 }
 
-@media (max-width: 390px) {
-  .car-listing {
-    width: 100%;
-  }
-
+@media (max-width: 320px) {
   .block__heading {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+  }
+  .h2-display {
+    font-size: 2rem;
   }
 
   .car-listings {
